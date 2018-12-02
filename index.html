@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MT Web Designer</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,800|Nunito:200,200i,300,300i,400,600,700,800" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" />
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	
+	<!--  menu for the mobile version -->
+	<div class="menu-mobile closed">
+		<div class="menu-mobile-container">
+			<div id="closeMobMenu" class="close-button">
+				<i class="fas fa-times"></i>
+			</div>
+			<ul class="menu-mobile-list">
+				<li><a href="#section-1">Home</a></li>
+				<li><a href="#section-2">Services</a></li>
+				<li><a href="#section-3">Works</a></li>
+				<li><a href="#section-4">About</a></li>
+				<li><a href="#section-5">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!--  sidebar - navigation for the desktop -->
+	<nav class="sidebar"> 
+		<div class="sidebar-logo">
+			
+		</div>
+		<ul class="sidebar-list">
+			<!-- <li><a href="#section-1">Home</a></li> -->
+			<li><a class="sidebar-link" href="#section-2">Services</a></li>
+			<li><a class="sidebar-link" href="#section-3">Works</a></li>
+			<li><a class="sidebar-link" href="#section-4">About</a></li>
+			<li><a class="sidebar-link" href="#section-5">Contact</a></li>
+		</ul>
+		<div class="sidebar-message">
+			
+		</div>
+	</nav>
+	
+	<!-- Section Home -->
+	<section id="section-1" class="section section-1">
+		<div class="section-background gradient-home show">
+			<div class="container">
+				<nav class="nav-top">
+					<div class="nav-top-container d-flex justify-content-end">
+						<div id="openMobMenu"  class="bars d-flex flex-column justify-content-between align-items-end">
+							<div class="bar bar-1"></div>
+							<div class="bar bar-2"></div>
+							<div class="bar bar-3"></div>
+						</div>
+					</div>
+				</nav>
+				<div class="home">
+					<div class="home-container">
+						<div class="main-title">
+							<h1>Maria</h1>
+							<h1>Trepakova</h1>
+						</div>
+						<div class="logo-container">
+							<div class="logo">
+								<a href="#section-1"><img src="assets/icons/logo-letters_1.svg" alt=""></a>
+							</div>
+						</div>
+						<div class="sub-title">
+							<h2>Front-End Developer</h2>
+							<h2>Ux Designer</h2>
+						</div>
+						<div id="btn-s1-down" data-target="#section-2" class="arrow-container"><i class="arrow down"></i></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- Section Services -->
+	<section id="section-2" class="section section-2">
+		<div class="section-background gradient-services">
+			<div class="container">
+				<div class="section-title row">
+					<h2 class="triangle">Services</h2>
+					<div class="line"></div>
+				</div>
+
+				<!-- Services -->
+				<div class="services">
+					<div class="services-container">
+						<!-- service -->
+						<div class="service">
+							<div class="service-content">
+								<div class="service-icon">
+									<img src="assets/icons/design.svg" alt="">
+								</div>
+								<div class="service-title">UX Design</div>
+								<div class="line"></div>
+								<div class="service-text">Create an unforgettable experience for your users.</div>
+								<div class="arrow-container"><i class="arrow down"></i></div>
+								
+							</div>
+						</div>
+						<!-- service -->
+						<div class="service">
+							<div class="service-content">
+								<div class="service-icon">
+									<img src="assets/icons/development.svg" alt="">
+								</div>
+								<div class="service-title">Web Development</div>
+								<div class="line"></div>
+								<div class="service-text">Website development using the latest standarts</div>
+								<div class="arrow-container"><i class="arrow down"></i></div>
+							</div>
+						</div>
+						<!-- service -->
+						<div class="service">
+							<div class="service-content">
+								<div class="service-icon">
+									<img src="assets/icons/responsive.svg" alt="">
+								</div>
+								<div class="service-title">Responsive</div>
+								<div class="line"></div>
+								<div class="service-text">Your website is pretty on mobile devices too!</div>
+								<div class="arrow-container"><i class="arrow down"></i></div>
+								
+							</div>
+						</div>
+						<!-- service -->
+						<div class="service">
+							<div class="service-content">
+								<div class="service-icon">
+									<img src="assets/icons/wordpress.svg" alt="">
+								</div>
+								<div class="service-title">Wordpress</div>
+								<div class="line"></div>
+								<div class="service-text">The most popular CMS platform</div>
+								<div class="arrow-container"><i class="arrow down"></i></div>				
+							</div>
+						</div>
+						<!-- service -->
+						<div class="service">
+							<div class="service-content">
+								<div class="service-icon">
+									<img src="assets/icons/content.svg" alt="">
+								</div>
+								<div class="service-title">Content Management</div>
+								<div class="line"></div>
+								<div class="service-text">Ability to change and add content</div>
+								<div class="arrow-container"><i class="arrow down"></i></div>
+							</div>
+						</div>
+						<!-- service -->
+						<div class="service">
+							<div class="service-content">
+								<div class="service-icon">
+									<img src="assets/icons/support.svg" alt="">
+								</div>
+								<div class="service-title">Support Maintenance</div>
+								<div class="line"></div>
+								<div class="service-text">Website maintenance through first month</div>
+								<div class="arrow-container"><i class="arrow down"></i></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	
+	<!-- Section Works -->
+	<section id="section-3" class="section section-3">
+		<div class="section-background gradient-works">
+			<div class="container">
+				<div class="section-title row violet">
+					<h2 class="triangle-v">Works</h2>
+					<div class="v-line"></div>
+				</div>
+
+				<!-- Works -->
+				<div class="works">
+					<div class="works-container">
+						<!-- work -->
+						<div class="work" data-toggle="modal" data-target="#exampleModal">
+							<div class="work-content">
+								<div class="work-description">
+									<div class="work-title">
+										<h3><i class="fas fa-map-marked-alt"></i>
+											Custom Map
+										</h3>
+									</div>
+									<div class="work-text">
+										<h5>Custom markers, popup and unique map design</h5>
+									</div>
+								</div>
+								<img src="assets/works/work-4.png" alt="">
+							</div>
+						</div>
+						<!-- work -->
+						<div class="work">
+							<div class="work-content">
+								<div class="work-description">
+									<div class="work-title">
+										<h3><i class="fas fa-camera"></i>
+											your_clip_
+										</h3>
+									</div>
+									<div class="work-text"></div>
+								</div>
+								<img src="assets/works/work-3.png" alt="">
+							</div>
+						</div>
+						<!-- work -->
+						<div class="work">
+							<div class="work-content">
+								<div class="work-description">
+									<div class="work-title">
+										<h3><i class="fas fa-signal"></i>
+											Data Visualisation
+										</h3>
+									</div>
+									<div class="work-text"></div>
+								</div>
+								<img src="assets/works/work-2.png" alt="">
+							</div>
+						</div>
+					</div>	
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- Modal for Map-->
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog modal-lg" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <div id="map"></div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	
+	<!-- Section About -->
+	<section id="section-4" class="section section-4">
+		<div class="section-background gradient-about">
+			<div class="container">
+				<div class="section-title title-center">
+					<h2 class="triangle-right">My path to my dream job</h2>
+				</div>
+
+				<!-- About -->
+				<div class="about">
+					<div class="about-container">
+						<!-- one step -->
+						<div class="row">
+							<div class="about-icon" >
+								<img src="assets/icons/icon-tr.svg" alt="">
+							</div>
+							<div class="about-text left">
+								<h3>Art school (4years)</h3>
+								<p>
+									helped to develope my deign skills
+								</p>
+							</div>
+						</div>
+						<!-- one step -->
+						<div class="row">
+							<div class="about-icon">
+								<img src="assets/icons/icon-tr.svg" alt="">
+							</div>
+							<div class="about-text right">
+								<h3>Pascal Pro & Photoshop</h3>
+								<h3>Adobe Illustrator/ Drawing</h3>
+								<p>
+									getting to know some basics
+								</p>
+							</div>
+						</div>
+						<!-- one step -->
+						<div class="row">
+							<div class="about-icon">
+								<img src="assets/icons/icon-tr.svg" alt="">
+							</div>
+							<div class="about-text left">
+								<h3>Certificate in IT Essentials</h3>
+								<p>
+									more coding/ database/ python
+								</p>
+							</div>
+						</div>
+						<!-- one step -->
+						<div class="row">
+							<div class="about-icon">
+								<img src="assets/icons/icon-tr.svg" alt="">
+							</div>
+							<div class="about-text right">
+								<h3>Diploma in Ux/ Web Design</h3>
+								<p>
+									developed my technical skills
+								</p>
+							</div>
+						</div>
+						<!-- one step -->
+						<div class="row">
+							<div class="about-icon">
+								<img src="assets/icons/icon-tr.svg" alt="">
+							</div>
+							<div class="about-text center">
+								<h3>DREAM JOB</h3>
+								<ul>
+									<li>Full stack Developer</li>
+									<li>Software Developer</li>
+									<li>Front-end Developer</li>
+									<li>more design & coding</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- Section Contact -->
+	<section id="section-5" class="section section-5">
+		<div class="section-background gradient-contact">
+			<div class="container">
+				<div class="section-title row title-center">
+					<h2 class="triangle center">Contact</h2>
+					<div class="line"></div>
+				</div>
+
+				<!-- Contact -->
+				<div class="contact">
+					<div class="contact-container">
+						<div class="contact-info">
+							<h3>Contact me by phone or send an email</h3>
+							<div class="row justify-content-center">
+								<div class="col-6">
+									<div class="row align-items-center justify-content-end">
+										<p>Phone:</p>
+										<a href="tel:+64220628575">+64220628575</a>
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="row align-items-center justify-content-start">
+										<p>Email:</p>
+										<a href = "mailto: mary.trepakova@gmail.com">mary.trepakova@gmail.com</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<h3 class="contact-message">Get in touch, send me a message</h3>
+						<!-- contact form -->
+						<div class="contact-form">
+							<form method="post" action="send_mail.php" class="needs-validation" novalidate>
+								<div class="form-container">
+									<div class="row">
+										<div class="col-sm-12 col-lg-6">
+											<div class="container-input">
+												<div class="rect"></div>	
+												<input class="form-control" id="name" name="name" type="text" required>
+												<label for="name">Your Name</label>
+												<div class="valid-feedback">
+											        <i class="fas fa-check"></i> Looks good!
+											    </div>
+											    <div class="invalid-feedback">
+											       <i class="fas fa-times"></i> Check your Name
+											    </div>
+											</div>
+											<div class="container-input">
+												<div class="rect"></div>
+												<input class="form-control" id="email" name="email" type="text" required>
+												<label for="email">E-mail</label>
+												<div class="valid-feedback">
+											        <i class="fas fa-check"></i> Looks good!
+											    </div>
+												<div class="invalid-feedback">
+											        <i class="fas fa-times"></i> Check your Email
+											    </div>
+											</div>
+											<div class="container-input">
+												<div class="rect"></div>
+												<input class="form-control" id="pNumber" name="pNumber" type="text" required>
+												<label for="pNumber">Phone Number</label>
+												<div class="valid-feedback">
+											        <i class="fas fa-check"></i> Looks good!
+											    </div>
+												<div class="invalid-feedback">
+											        <i class="fas fa-times"></i> Check your Phone number
+											    </div>
+											</div>
+										</div>
+										<div class="col-sm-12 col-lg-6">
+											<div class="container-input">
+												<div class="rect"></div>
+												<textarea class="form-control" name="message" id="message" cols="20" rows="6" required></textarea>
+												<label for="message">Message</label>
+												<div class="valid-feedback">
+											        <i class="fas fa-check"></i> Thank you!
+											    </div>
+											    <div class="invalid-feedback">
+											        <i class="fas fa-times"></i> Fill in!
+											    </div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<input id="contactSubmit" class="btn-submit" type="submit" value="Send">
+							</form>
+						</div>
+						<div class="contact-text"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- footer -->
+	<footer>
+		<div class="container">
+			<div class="footer-container">			
+				<div class="footer-contact">
+					<h4>Contact:</h4>
+					<div class="footer-phone row">
+						<i class="fas fa-mobile-alt"></i>
+						<a href="tel:+64220628575">+64220628575</a>
+					</div>
+					<div class="footer-mail row">
+						<i class="fas fa-envelope-square"></i>
+						<a href = "mailto: mary.trepakova@gmail.com">mary.trepakova@gmail.com</a>
+					</div>
+				</div>
+				<div class="footer-media">
+					<h4>Media:</h4>
+					<div class="footer-media-icons">
+						<a href="https://www.linkedin.com/in/maria-trepakova-b3b32b173/"><i class="fab fa-linkedin"></i></a>
+						<a href="https://www.facebook.com/masha.trepakova"><i class="fab fa-facebook"></i></a>
+						<a href="https://www.instagram.com/sleepy__rabbit/"><i class="fab fa-instagram"></i></a>
+					</div>
+					<h6 class="media-copyright">/ &nbsp; Maria Trepakova &copy; 2018</h6>
+				</div>			
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				<h6>Maria Trepakova &copy; 2018</h6>
+			</div>
+		</div>
+	</footer>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="vendore/tilt/tilt.js"></script>
+	<script src="vendore/anime/anime.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"></script>
+	<script src="js/scroll.js"></script>
+	<script src="js/script.js"></script>
+
+</body>
+</html>
